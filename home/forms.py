@@ -10,3 +10,6 @@ class SignupForm(forms.Form):
     )
     sexe = forms.CharField(widget = forms.Select(choices = sexe_choices))
     
+class SigninForm(forms.Form):
+    username = forms.CharField(required = True)
+    password = forms.CharField(required = True, widget = forms.PasswordInput)

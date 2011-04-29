@@ -5,42 +5,53 @@
         <div id="board">
             <div id="left">
                 <div class="title_d3">Commencez Avec 450 Crédits!</div>
-                
                 <div id="signupform">
-                    <form action="signup" method="post">
-                        <p>
+                    <form action="" method="post">{% csrf_token %}
+                        <div>
+                            {{signupform.username.errors}}
                             <label>Username</label>
-                            <input type="text"/>
-                        </p>
+                            {{signupform.username}}
+                        </div>
                         
-                        <p>
+                        <div>
+                            {{signupform.password.errors}}
                             <label>Password</label>
-                            <input type="password"/>
-                        </p>
+                            {{signupform.password}}
+                        </div>
                         
-                        <p>
+                        <div>
+                            {{signupform.email.errors}}
                             <label>Email</label>
-                            <input type="text"/>
-                        </p>
+                            {{signupform.email}}
+                        </div>
                         
-                        <p>
+                        <div>
                             <label>Sexe</label>
-                            <select>
-                                <option>Homme</option>
-                                <option>Femme</option>
-                            </select>
-                        </p>
+                            {{signupform.sexe}}
+                        </div>
                         
-                        <p>
-                            <lable></lable>
-                            <input type="submit"/>
-                        </p>
+                        <div>
+                            <label> </label>
+                            <input value="S'inscrire" type="submit"/>
+                        </div>
                         
                     </form>
                 </div>
                 
             </div>
-            <div id="right">right</div>
+            <div id="right">
+                <div id="menu">
+                    <ul>
+                        <li><a href="/">Accueille</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a href="/home">Bienvenu {{user.username}}</a></li>
+                        <li><a href="/logout">Déconnexion</a></li>
+                        {% else %}
+                        <li><a href="/login">Connexion</a></li>
+                        {% endif %}
+                    </ul>
+                </div>            
+            </div>
         </div>
     </div>
 {% endblock %}

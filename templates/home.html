@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block container %}
+    <div id="headbar">
+        <div id="headalert">Invitez vos amis et gagnez 50 crédits <a class="reflink" href="/home/{{referral_hash}}">http://localhost:8000/home/{{referral_hash}}</a> </div>
+        <div id="credits">{{credits}} Crédits</div>
+        <div id="points">{{points}} Points</div>
+    </div>
+    <div id="content">
+        <div id="board">
+            <div id="left">
+                <div id="alert">Gagner plus de points en suivant ces étapes:</div>
+            </div>
+            <div id="right">
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

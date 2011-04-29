@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block container %}
+    <div id="content">
+        <div id="board">
+            <div id="left">
+                <div class="title_d3">Connexion</div>
+                <div id="signupform">
+                    <form action="" method="post">{% csrf_token %}
+                        <div>
+                            {% if error %} <ul class="errorlist"><li> {{error}} </li> </ul>{% endif %}
+                            <label>Username</label>
+                            {{signinform.username}}
+                        </div>
+                        
+                        <div>
+                            <label>Password</label>
+                            {{signinform.password}}
+                        </div>
+                        <div>
+                            <label> </label>
+                            <input value="Connexion" type="submit"/>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <div id="right">
+           
+            </div>
+        </div>
+    </div>
+{% endblock %}

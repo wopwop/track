@@ -8,8 +8,8 @@ class UserScores(models.Model):
     #referral_hash = hashlib.sha1(user.username).hexdigest()[:6]
     referral_hash = models.CharField(max_length = 6)
     sexe_choices = (
-        ("H","Homme"),
-        ("F","Femme")
+        ("Homme","Homme"),
+        ("Femme","Femme")
     )
     sexe = models.CharField(max_length = 10, choices = sexe_choices)
     # get total of a user points
@@ -22,7 +22,7 @@ class UserScores(models.Model):
     # get total of a user credit
     def total_credits(self):
         user_credits = Credit.objects.filter(user=self.user)
-        total_credits = 450
+        total_credits = 0
         for credit in user_credits:
             total_credits += credit.credits
         return int(total_credits)

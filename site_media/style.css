@@ -19,7 +19,7 @@ body {
     border-right: 1px dashed #EEEEEE;
     float: left;
     margin: 0 10px 0 0;
-    width: 530px;
+    width: 500px;
 }
 #content #right {
     margin: 0;
@@ -34,7 +34,7 @@ body {
 #signupform {
     margin: 20px 0 0;
 }
-#signupform p {
+#signupform div {
     float: left;
     margin: 0;
     padding: 10px;
@@ -48,10 +48,24 @@ body {
     padding: 5px;
 }
 #signupform input[type="submit"] {
-    margin: 0;
+    background: none repeat scroll 0 0 #416D8C;
+    border: 1px none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-right: 115px;
+    margin-top: 0;
+    padding: 5px;
 }
 #signupform select {
+    border: 1px solid #859CAD;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
     margin: 0;
+    padding: 5px;
 }
 #signupform label {
     color: #929393;
@@ -62,6 +76,92 @@ body {
     text-align: right;
     width: 105px;
 }
-#board{
-    padding:20px;
+#board {
+    float: left;
+    padding: 20px;
+    width: 920px;
+}
+.errorlist {
+    color: #DB6D7A;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.errorlist li {
+    margin: 0 0 0 115px;
+    width: 200px;
+}
+#menu {
+    float: right;
+}
+#menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    background: none repeat scroll 0 0 #90B72D;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 9px;
+}
+#menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#credits {
+    background: none repeat scroll 0 0 #BFCE4A;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    width: 150px;
+}
+#points {
+    background: none repeat scroll 0 0 #F98639;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+}
+#alert {
+    color: #6C6C6D;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+#headalert {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    color: #6C6C6D;
+    float: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 15px 10px 0;
+    padding: 10px;
+    width: 585px;
+}
+#headalert .reflink {
+    background: none repeat scroll 0 0 #FFFCA8;
+    border: 1px dashed #EFED5F;
+    color: #39578C;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+}
+#headbar {
+    float: left;
+    margin: 0;
+    width: 100%;
 }
