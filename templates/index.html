@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block container %}
+    <div id="content">
+        <div id="board">
+            <div id="left">
+                <div class="title_d3">Commencez Avec 450 Crédits!</div>
+                
+                <div id="signupform">
+                    <form action="signup" method="post">
+                        <p>
+                            <label>Username</label>
+                            <input type="text"/>
+                        </p>
+                        
+                        <p>
+                            <label>Password</label>
+                            <input type="password"/>
+                        </p>
+                        
+                        <p>
+                            <label>Email</label>
+                            <input type="text"/>
+                        </p>
+                        
+                        <p>
+                            <label>Sexe</label>
+                            <select>
+                                <option>Homme</option>
+                                <option>Femme</option>
+                            </select>
+                        </p>
+                        
+                        <p>
+                            <lable></lable>
+                            <input type="submit"/>
+                        </p>
+                        
+                    </form>
+                </div>
+                
+            </div>
+            <div id="right">right</div>
+        </div>
+    </div>
+{% endblock %}

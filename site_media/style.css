@@ -1,0 +1,67 @@
+body {
+    background: none repeat scroll 0 0 #F2F2F2;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+#container {
+    left: 13%;
+    margin: 100px auto auto;
+    min-height: 300px;
+    width: 960px;
+}
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+#content #left {
+    border-right: 1px dashed #EEEEEE;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 530px;
+}
+#content #right {
+    margin: 0;
+}
+.title_d3 {
+    color: #276896;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+#signupform {
+    margin: 20px 0 0;
+}
+#signupform p {
+    float: left;
+    margin: 0;
+    padding: 10px;
+    width: 500px;
+}
+#signupform input[type="text"], input[type="password"] {
+    border: 1px solid #859CAD;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+#signupform input[type="submit"] {
+    margin: 0;
+}
+#signupform select {
+    margin: 0;
+}
+#signupform label {
+    color: #929393;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+    padding-right: 10px;
+    text-align: right;
+    width: 105px;
+}
+#board{
+    padding:20px;
+}
